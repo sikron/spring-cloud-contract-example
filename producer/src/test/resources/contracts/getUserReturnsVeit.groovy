@@ -4,8 +4,7 @@ import org.springframework.cloud.contract.spec.Contract;
 
 Contract.make {
     request {
-        //uppercase is required for the client tests to succeed!
-        method 'GET'
+        method GET()
         //slash is required instead of empty string
         url '/'
     }
